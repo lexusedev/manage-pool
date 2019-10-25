@@ -1,14 +1,22 @@
 <template>
-  <div >
-    helloworld
-  </div>
+  <el-container>
+  <el-header>
+    <navigate></navigate>
+  </el-header>
+  <el-container>
+    <el-aside width="200px"></el-aside>
+    <el-main></el-main>
+  </el-container>
+</el-container>
 </template>
 
 <script>
 // @ is an alias to /src
+import navigate from '@/components/layout/navigate'
 export default {
   name: 'home',
   components: {
+    navigate
   },
   data() {
     return {
